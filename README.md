@@ -3,7 +3,7 @@
 [PostCSS] plugin that converts postcss-mixins to atomic CSS classes. Useful when generating a reusable CSS library.
 
 [PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/HipsterZipster/postcss-mixin-to-class.svg
+[ci-img]:  https://travis-ci.org/HipsterZipster/postcss-mixin-to-class.svg?branch=master
 [ci]:      https://travis-ci.org/HipsterZipster/postcss-mixin-to-class
 
 ```css
