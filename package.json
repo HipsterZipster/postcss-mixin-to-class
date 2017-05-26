@@ -1,0 +1,61 @@
+{
+  "name": "postcss-mixin-to-class",
+  "version": "0.0.1",
+  "description": "PostCSS plugin that converts postcss-mixins to atomic CSS classes. Useful when generating a reusable CSS library",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "postcss-mixin",
+    "postcss-mixins",
+    "mixins",
+    "acss",
+    "atomic-css"
+  ],
+  "author": "Joel Zipkin <yzipkin@gmail.com>",
+  "license": "MIT",
+  "repository": "HipsterZipster/postcss-mixin-to-class",
+  "bugs": {
+    "url": "https://github.com/HipsterZipster/postcss-mixin-to-class/issues"
+  },
+  "homepage": "https://github.com/HipsterZipster/postcss-mixin-to-class",
+  "dependencies": {
+    "globby": "^6.1.0",
+    "postcss": "^6.0.1",
+    "postcss-js": "^1.0.0",
+    "postcss-simple-vars": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "eslint": "^3.19.0",
+    "eslint-config-postcss": "^2.0.2",
+    "eslint-loader": "^1.7.1",
+    "jest": "^20.0.0",
+    "os": "^0.1.1",
+    "path": "^0.12.7",
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": "npm run webpack -- --watch --progress --bail",
+    "start": "npm run watch",
+    "node": "node",
+    "build": "npm run webpack --profile --progress --bail",
+    "webpack": "node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "rules": {
+      "indent": [
+        1,
+        2
+      ],
+      "no-unused-vars": "warn"
+    },
+    "env": {
+      "jest": true
+    }
+  }
+}
